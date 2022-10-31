@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Proyecto_Web</title>
+</head>
+
+<body>
+    <!-- I N I C I O -->
+
+    <!--Login-->
+    <div class="login-box">
+        <img class="avatar" src="./img/k-logo.png" alt="logo_icono">
+        <h1>Login Here</h1>
+        <form>
+            <!--USERNAME-->
+            <label for="username">Usuario</label>
+            <input type="text" placeholder="Enter Username">
+            <!--PASSWORD-->
+
+            <label for="password">Contraseña</label>
+            <input type="password" placeholder="Enter Password">
+            <input type="submit" value="Login">
+            <a href="https://www.facebook.com/kevin.chungara.1">Olvidaste el usuario a la contraseña? Contactame</a>
+        </form>
+    </div>
+
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Argentina Programa #YoProgramo</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#skills" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="redes">
+                        <a href="https://www.facebook.com/kevin.chungara.1"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="login" href="#login" onclick="seleccionar(this)">Login</a>
+                    </div>
+
+                    
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Kevin Chungara</span>, Full Stack Developer Jr.</h2>
+                <p class="descripcion">Portfolio Web</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--  S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto_2.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Kevin Chungara</span> </h2>
+            <h3>Full Stack Developer Jr.</h3>
+            <p>Soy Programador desde hace 1 año, con conocimientos en Java, Base de Datos, CSS, HTML y con experiencia en Atencion al cliente</p>
+        </div>
+    </section>
+
+
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/lugar_o.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">EDUCACION</p>
+            <h3>CIFIC - Centro Integral de Formacion para la Industria de la Construccion</h3>
+            <p>Aqui empece con la programacion, empece con Tecnicas de programacion y Base de Datos</p>
+            <p>Titulo de Programador Orientado a Objetos(POO)</p>
+            <p>2020</p>
+        </div>
+    </section>
+    
+
+    <!-- H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">50%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Aprendizaje constante</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Java</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Ingles</p>
+                <span class="porcentaje">40%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto_1.png" alt="">
+                <div class="info">
+                    <h1>Nombre: Proyecto_Integrador</h1>
+                    <h2>Fecha: 25/10/2022</h2>
+                    <h3>Primer Proyecto creado</h3>
+                    <a href="https://github.com/Kchung23/portfolio-FrontEnd">Link</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="https://github.com/Kchung23/"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/kevin.chungara.1"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
